@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandhini - Developer portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 4, 48);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .first>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: #1e2167;
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(170, 107, 227);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.01rem;
+            color: rgb(170, 107, 227);
+        }
+
+        #element {
+            color: rgb(170, 107, 227);
+        }
+
+        .second {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .second h1 {
+            font-size: 1.9rem;
+        }
+
+        .second .box {
+            background-color: white;
+            width: 82vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .second .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 275px;
+        }
+
+        .third {
+            max-width: 80vw;
+            margin: auto;
+            height: 64vh;
+        }
+
+        .third h1 {
+            font-size: 1.9rem;
+        }
+
+        .third .box1 {
+            background-color: white;
+            width: 82vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .third .vertical1 {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 198px;
+        }
+
+        .vertical-title1 {
+            position: relative;
+            top: 75px;
+            width: 221px;
+            font-size: 18px;
+        }
+
+        .vertical-desc1 {
+            font-size: 18px;
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 271px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -37px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 221px;
+            font-size: 18px;
+        }
+
+        .vertical-desc {
+            font-size: 18px;
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 271px;
+        }
+
+        footer {
+            background-color: #010126;
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .contactform {
+            padding: 0 34px;
+            padding-top: 144px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .contactform h1 {
+            font-family: 'Source Code Pro', monospace;
+            padding: 12px 0;
+        }
+
+        .contactform form div {
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactform form div input {
+            width: 26vw;
+            border-radius: 5px;
+            margin: 6px 0 0 0;
+            padding: 3px;
+        }
+
+        #emailHelp {
+            font-size:11px;
+            color: rgb(195, 195, 218);
+            margin: 0 5px;
+        }
+
+        #form-check {
+            flex-direction: row;
+
+        }
+
+        #form-check input {
+            width: 24px;
+            margin: 3px 0;
+        }
+        .btn{
+            padding: 9px 14px;
+            border-radius: 20px;
+            color: white;
+            background-color: #05294d;
+            font-weight: bold;
+            font-size: 21px;
+            margin: 11px 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Nandhini's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/portfolio website/home.html"> Home</a> </li>
+                    <li> <a href="/portfolio website/about.html"> About</a></li>
+                    <li> <a href="/portfolio website/services.html"> Services</a></li>
+                    <li> <a href="/portfolio website/projects.html"> Projects</a></li>
+                    <li> <a href="/portfolio website/contactme.html"> Content Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        <div class="main">
+
+        </div>
+    </header>
+    <div class="main">
+        <div class="contactform">
+            <form>
+                <h1>Contact me for work/general Enquiries</h1>
+                <div class="mb-3">
+                    <label for="Clientemail" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="Cliente" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <label for="Clientemail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="Clientemail" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="Clientphone" class="form-label">Phone </label>
+                    <input type="phone" class="form-control" id="Clientphone">
+                </div>
+                <div class="mb-3">
+                <label for="Clientemail" class="form-label">Enquiry</label>
+                <input type="email" class="form-control" id="Clientemail" aria-describedby="emailHelp">
+            </div>
+                <div class="mb-3" id="form-check">
+                    <input type="checkbox" class="form-check-input" id="isclient">
+                    <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
